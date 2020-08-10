@@ -1,0 +1,13 @@
+/home/rudra/helix/src/main/java/tech/codingclub/helix/global/SysProperties.java
+/home/rudra/helix/src/main/java/tech/codingclub/helix/controller/MainController.java
+/home/rudra/helix/src/generated-sources/jooq/tech/codingclub/helix/Tables.java
+/home/rudra/helix/src/generated-sources/jooq/tech/codingclub/helix/Public.java
+/home/rudra/helix/src/generated-sources/jooq/tech/codingclub/helix/Keys.java
+/home/rudra/helix/src/main/java/tech/codingclub/helix/controller/LoginController.java
+/home/rudra/helix/src/generated-sources/jooq/tech/codingclub/helix/tables/Songcrawler.java
+/home/rudra/helix/src/generated-sources/jooq/tech/codingclub/helix/tables/Coders.java
+/home/rudra/helix/src/main/java/tech/codingclub/helix/entity/TimeApi.java
+/home/rudra/helix/src/generated-sources/jooq/tech/codingclub/helix/tables/records/SongcrawlerRecord.java
+/home/rudra/helix/src/main/java/tech/codingclub/helix/controller/BaseController.java
+/home/rudra/helix/src/main/java/tech/codingclub/helix/controller/NonAPIController.java
+/home/rudra/helix/src/generated-sources/jooq/tech/codingclub/helix/tables/records/CodersRecord.java
