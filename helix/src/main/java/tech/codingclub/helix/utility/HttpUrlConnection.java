@@ -28,14 +28,14 @@ public class HttpUrlConnection {
 
         return result.toString();
     }
-    public static void main(String[] args) {
-        try {
-            System.out.println(sendGet("https://codingclub.tech/test-get-request?name=RUDRA"));
-        }catch (Exception e)
-        {
-            e.printStackTrace();
-        }
-
-    }
+//    public static void main(String[] args) {
+//        try {
+//            System.out.println(sendGet("https://codingclub.tech/test-get-request?name=RUDRA"));
+//        }catch (Exception e)
+//        {
+//            e.printStackTrace();
+//        }
+//
+//    }
 
 }

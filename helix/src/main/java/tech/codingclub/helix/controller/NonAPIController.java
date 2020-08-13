@@ -26,4 +26,9 @@ public class NonAPIController extends BaseController {
         logger.info("Test call!");
         return "Test successful!";
     }
+
+    @RequestMapping(method = RequestMethod.GET, value = "/alien")
+    public String alien(ModelMap model) {
+        return "alien";
+    }
 }

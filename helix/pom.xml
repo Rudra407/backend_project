@@ -7,6 +7,7 @@
     <groupId>tech.codingclub.helix</groupId>
     <artifactId>helix</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>war</packaging>
 
     <properties>
         <spring.version>3.2.8.RELEASE</spring.version>
@@ -234,7 +235,7 @@
                 </includes>
             </resource>
         </resources>
-        <finalName>adServing</finalName>
+        <finalName>helix</finalName>
         <plugins>
             <plugin>
                 <groupId>org.codehaus.cargo</groupId>
@@ -392,17 +393,31 @@
 
 
     <profiles>
+
         <profile>
             <id>LOCAL-RUDRA</id>
             <properties>
                 <DB_URL>jdbc:postgresql://localhost:5432/</DB_URL>
-                <BASE_DIR>/home/rudra/helix</BASE_DIR>
+                <BASE_DIR>/home/rudra/IdeaProjects/helix</BASE_DIR>
                 <DB_NAME>twitter</DB_NAME>
                 <DB_USERNAME>postgres</DB_USERNAME>
                 <DB_PASSWORD>postgres</DB_PASSWORD>
                 <SERVER_DOMAIN>localhost:8080</SERVER_DOMAIN>
             </properties>
         </profile>
+
+        <profile>
+            <id>LOCAL-GANESH</id>
+            <properties>
+                <DB_URL>jdbc:postgresql://localhost:5432/</DB_URL>
+                <BASE_DIR>/home/rudra/IdeaProjects/helix</BASE_DIR>
+                <DB_NAME>twitter</DB_NAME>
+                <DB_USERNAME>postgres</DB_USERNAME>
+                <DB_PASSWORD>postgres</DB_PASSWORD>
+                <SERVER_DOMAIN>localhost:8080</SERVER_DOMAIN>
+            </properties>
+        </profile>
+
     </profiles>
 
 

@@ -19,7 +19,12 @@ public class Tables {
 	public static final tech.codingclub.helix.tables.Coders CODERS = tech.codingclub.helix.tables.Coders.CODERS;
 
 	/**
-	 * The table public.songcrawler
+	 * The table public.member
 	 */
-	public static final tech.codingclub.helix.tables.Songcrawler SONGCRAWLER = tech.codingclub.helix.tables.Songcrawler.SONGCRAWLER;
+	public static final tech.codingclub.helix.tables.Member MEMBER = tech.codingclub.helix.tables.Member.MEMBER;
+
+	/**
+	 * The table public.songscrawler
+	 */
+	public static final tech.codingclub.helix.tables.Songscrawler SONGSCRAWLER = tech.codingclub.helix.tables.Songscrawler.SONGSCRAWLER;
 }

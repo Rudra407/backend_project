@@ -9,7 +9,7 @@
         <module name="helix" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="8">
       <module name="helix" target="1.6" />
     </bytecodeTargetLevel>
   </component>

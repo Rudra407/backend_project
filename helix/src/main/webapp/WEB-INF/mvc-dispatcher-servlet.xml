@@ -17,7 +17,8 @@
         <property name="suffix" value=".jsp"/>
     </bean>
 
-    <mvc:resources mapping="/static/**" location="static/"/>
-    <mvc:annotation-driven/>
+    <mvc:interceptors>
+        <bean class="tech.codingclub.helix.controller.ApplicationInterceptor"/>
+    </mvc:interceptors>
 
 </beans>

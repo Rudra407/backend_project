@@ -11,7 +11,7 @@ package tech.codingclub.helix.tables;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class Coders extends org.jooq.impl.TableImpl<tech.codingclub.helix.tables.records.CodersRecord> {
 
-	private static final long serialVersionUID = -29116770;
+	private static final long serialVersionUID = -1343013281;
 
 	/**
 	 * The singleton instance of <code>public.coders</code>
@@ -29,7 +29,7 @@ public class Coders extends org.jooq.impl.TableImpl<tech.codingclub.helix.tables
 	/**
 	 * The column <code>public.coders.name</code>.
 	 */
-	public final org.jooq.TableField<tech.codingclub.helix.tables.records.CodersRecord, java.lang.String> NAME = createField("name", org.jooq.impl.SQLDataType.CLOB, this, "");
+	public final org.jooq.TableField<tech.codingclub.helix.tables.records.CodersRecord, java.lang.String> NAME = createField("name", org.jooq.impl.SQLDataType.VARCHAR.length(30), this, "");
 
 	/**
 	 * The column <code>public.coders.age</code>.
