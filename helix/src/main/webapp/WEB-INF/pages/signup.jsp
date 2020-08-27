@@ -1,6 +1,6 @@
  <html>
 
-<link rel="shortcut icon" type="image/png" href="/static/images/favicon.ico"/>
+    <link rel="short icon" type="image/png" href="/static/images/favicon.ico"/>
 
     <head>
 
@@ -136,10 +136,10 @@
     <body>
         <section id="signup-box">
           <h1>Create your  account</h1>
-          <p>Welcome to the social network of youth!. Get connected.</p>
+          <p>Welcome to the social network of coders</p>
           <form id="signup-form">
             <label for="name">Name</label><br>
-            <input id = "signup-name" type="text" name="name" placeholder="Your name"><br>
+            <input id = "signup-name" type="text" name="name" placeholder="Andrea"><br>
             <label for="email">Email</label><br>
             <input id = "signup-email" type="email" name="email" placeholder="Fill your email"><br>
             <label for="password">Password</label><br>

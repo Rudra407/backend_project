@@ -24,6 +24,33 @@ public class ApplicationInterceptor implements HandlerInterceptor {
             }
         }
 
+        if(httpServletRequest.getRequestURI().equals("/welcome")) {
+            Boolean isUserLogined = ControllerUtils.isUserCodingMafia(httpServletRequest);
+            if(isUserLogined != null && isUserLogined){
+                return  true;
+            } else {
+                httpServletResponse.sendRedirect("/login/welcome?failed=1");
+                return false;
+            }
+        }
+
+
+        if(httpServletRequest.getRequestURI().startsWith("/user")) {
+            Boolean isUserLogined = ControllerUtils.isUserCodingMafia(httpServletRequest);
+            if(isUserLogined != null && isUserLogined){
+                return  true;
+            } else {
+                if(httpServletRequest.getMethod().equals("GET")){
+                    httpServletResponse.sendRedirect("/login/welcome?failed=1");
+                } else {
+                    httpServletResponse.sendError(401);
+                }
+
+                return false;
+            }
+        }
+
+
         return true;
     }
 

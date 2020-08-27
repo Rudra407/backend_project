@@ -19,6 +19,11 @@ public class Tables {
 	public static final tech.codingclub.helix.tables.Coders CODERS = tech.codingclub.helix.tables.Coders.CODERS;
 
 	/**
+	 * The table public.follower
+	 */
+	public static final tech.codingclub.helix.tables.Follower FOLLOWER = tech.codingclub.helix.tables.Follower.FOLLOWER;
+
+	/**
 	 * The table public.member
 	 */
 	public static final tech.codingclub.helix.tables.Member MEMBER = tech.codingclub.helix.tables.Member.MEMBER;
@@ -27,4 +32,9 @@ public class Tables {
 	 * The table public.songscrawler
 	 */
 	public static final tech.codingclub.helix.tables.Songscrawler SONGSCRAWLER = tech.codingclub.helix.tables.Songscrawler.SONGSCRAWLER;
+
+	/**
+	 * The table public.tweet
+	 */
+	public static final tech.codingclub.helix.tables.Tweet TWEET = tech.codingclub.helix.tables.Tweet.TWEET;
 }

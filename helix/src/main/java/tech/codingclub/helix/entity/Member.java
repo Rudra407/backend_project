@@ -12,5 +12,44 @@ public class Member extends MemberBase {
     public String image;
     public String token;
     public Boolean is_verified;
+    public Boolean is_followed;
+
+    //public int encryptionID;
+
+    public Member() {
+
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public String getToken() {
+        return token;
+    }
+
+    public Boolean getIs_verified() {
+        return is_verified;
+    }
+
+    public Long getId() { return id; }
+
+    public Boolean getIs_followed() { return is_followed; }
 
 }

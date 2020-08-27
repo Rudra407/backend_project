@@ -1,41 +1,42 @@
 <html>
 
-<link rel="shortcut icon" type="image/png" href="/static/images/favicon.ico"/>
+<link rel="stylesheet" tye="text/css" href="/static/css/alien.css">
 
 <head>
 
-<script type="text/javascript" src="/static/js/hello.js"></script>
 
-<link rel="stylesheet" type="text/css" href="/static/css/alien.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Arvo'>
+
 </head>
 
 <body>
 
-<div class="figure">
-  <div class="mj">
-    <div class="head">
-      <div class="nose"></div>
-      <div class="hair">
-        <div class="ponytail"></div>
-        <div class="frontpony"></div>
-      </div>
-    </div>
-    <div class="body">
-      <div class="jacket">
-        <div class="hand"></div>
-      </div>
-    </div>
-    <div class="leg">
-      <div class="foot"></div>
-    </div>
-    <div class="leg lft">
-      <div class="foot"></div>
-    </div>
-  </div>
-  <div class="error-no"> <span>4</span>
-    <div class="moon"></div><span>4</span>
-  </div>
-</div>
-</body>
+  <section class="page_404">
+	<div class="container">
+		<div class="row">
+		<div class="col-sm-12 ">
+		<div class="col-sm-10 col-sm-offset-1  text-center">
+		<div class="four_zero_four_bg">
+			<h1 class="text-center ">404</h1>
 
+
+		</div>
+
+		<div class="contant_box_404">
+		<h3 class="h2">
+		Look like you're lost
+		</h3>
+
+		<p>the page you are looking for not avaible!</p>
+
+		<a href="https://instagram.com/abol.codes" class="link_404">Go to Home</a>
+	</div>
+		</div>
+		</div>
+		</div>
+	</div>
+</section>
+
+</body>
 </html>

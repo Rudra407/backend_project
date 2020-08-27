@@ -11,7 +11,7 @@ package tech.codingclub.helix.tables;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class Songscrawler extends org.jooq.impl.TableImpl<tech.codingclub.helix.tables.records.SongscrawlerRecord> {
 
-	private static final long serialVersionUID = 1633968848;
+	private static final long serialVersionUID = 1275500832;
 
 	/**
 	 * The singleton instance of <code>public.songscrawler</code>
@@ -30,6 +30,51 @@ public class Songscrawler extends org.jooq.impl.TableImpl<tech.codingclub.helix.
 	 * The column <code>public.songscrawler.parent_link</code>.
 	 */
 	public final org.jooq.TableField<tech.codingclub.helix.tables.records.SongscrawlerRecord, java.lang.String> PARENT_LINK = createField("parent_link", org.jooq.impl.SQLDataType.VARCHAR.length(200), this, "");
+
+	/**
+	 * The column <code>public.songscrawler.link</code>.
+	 */
+	public final org.jooq.TableField<tech.codingclub.helix.tables.records.SongscrawlerRecord, java.lang.String> LINK = createField("link", org.jooq.impl.SQLDataType.VARCHAR.length(200), this, "");
+
+	/**
+	 * The column <code>public.songscrawler.album</code>.
+	 */
+	public final org.jooq.TableField<tech.codingclub.helix.tables.records.SongscrawlerRecord, java.lang.String> ALBUM = createField("album", org.jooq.impl.SQLDataType.VARCHAR.length(100), this, "");
+
+	/**
+	 * The column <code>public.songscrawler.duration</code>.
+	 */
+	public final org.jooq.TableField<tech.codingclub.helix.tables.records.SongscrawlerRecord, java.lang.String> DURATION = createField("duration", org.jooq.impl.SQLDataType.VARCHAR.length(100), this, "");
+
+	/**
+	 * The column <code>public.songscrawler.singers</code>.
+	 */
+	public final org.jooq.TableField<tech.codingclub.helix.tables.records.SongscrawlerRecord, java.lang.String> SINGERS = createField("singers", org.jooq.impl.SQLDataType.VARCHAR.length(100), this, "");
+
+	/**
+	 * The column <code>public.songscrawler.lyricist</code>.
+	 */
+	public final org.jooq.TableField<tech.codingclub.helix.tables.records.SongscrawlerRecord, java.lang.String> LYRICIST = createField("lyricist", org.jooq.impl.SQLDataType.VARCHAR.length(50), this, "");
+
+	/**
+	 * The column <code>public.songscrawler.music_director</code>.
+	 */
+	public final org.jooq.TableField<tech.codingclub.helix.tables.records.SongscrawlerRecord, java.lang.String> MUSIC_DIRECTOR = createField("music_director", org.jooq.impl.SQLDataType.VARCHAR.length(100), this, "");
+
+	/**
+	 * The column <code>public.songscrawler.download_128</code>.
+	 */
+	public final org.jooq.TableField<tech.codingclub.helix.tables.records.SongscrawlerRecord, java.lang.String> DOWNLOAD_128 = createField("download_128", org.jooq.impl.SQLDataType.VARCHAR.length(100), this, "");
+
+	/**
+	 * The column <code>public.songscrawler.download_256</code>.
+	 */
+	public final org.jooq.TableField<tech.codingclub.helix.tables.records.SongscrawlerRecord, java.lang.String> DOWNLOAD_256 = createField("download_256", org.jooq.impl.SQLDataType.VARCHAR.length(100), this, "");
+
+	/**
+	 * The column <code>public.songscrawler.image_url</code>.
+	 */
+	public final org.jooq.TableField<tech.codingclub.helix.tables.records.SongscrawlerRecord, java.lang.String> IMAGE_URL = createField("image_url", org.jooq.impl.SQLDataType.VARCHAR.length(100), this, "");
 
 	/**
 	 * Create a <code>public.songscrawler</code> table reference

@@ -1,6 +1,6 @@
  <html>
 
-<link rel="shortcut icon" type="image/png" href="/static/images/favicon.ico"/>
+    <link rel="short icon" type="image/png" href="/static/images/favicon.ico"/>
 
     <head>
 
@@ -41,7 +41,7 @@
               -moz-box-shadow: 0px 0px 76px 0px rgba(0, 0, 0, 0.20);
               box-shadow: 0px 0px 76px 0px rgba(0, 0, 0, 0.20);
               text-align: center;
-              height: auto;
+              height: 100%;
               max-width: 422px;
               width: 45%;
               margin: 30px 0;
@@ -102,6 +102,7 @@
               display: block;
               margin: auto;
               margin-bottom: 40px;
+
               font-size: 1.6rem;
               font-weight: 600;
             }
@@ -134,8 +135,8 @@
 
     <body>
         <section id="signup-box">
-          <h1>Login your  account</h1>
-          <p>Welcome to the social network of youth!. Get connected.</p>
+          <h1>Login your account</h1>
+          <p>Welcome to the social network of coders</p>
           <form id="signup-form">
             <label for="email">Email</label><br>
             <input id = "signup-email" type="email" name="email" placeholder="Fill your email"><br>
@@ -144,7 +145,7 @@
 
             <p style = "color:red; display:none" id = "signup-error">hhgfhgf</p>
 
-            <button type="button" id = "btn-signup">Sign IN</button>
+            <button type="button" id = "btn-signup">Login</button>
           </form>
         </section>
 
@@ -157,11 +158,15 @@
 
                 var error = "";
 
+                //if name is empty
                 if(!email){
                     error += "Email is empty.";
                 }
                 if(!password){
                     error += "Password is empty.";
+                }
+                if(password.length <= 6){
+                    error += "Password length must be greater than 6 characters."
                 }
 
                 $("#signup-error").html(error);
@@ -184,6 +189,7 @@
                     var password = $("#signup-password").val();
 
                     var user = {
+
                         "email" : email,
                         "password" : password
                     };
@@ -194,11 +200,12 @@
                         data: JSON.stringify(user),
                         success: function(response){
                             if(!!response){
-                                if(response.is_logined == true){
-                                    location.href = "https://google.com"
-                                }else{
-                                      $("#signup-error").html(response.message);
-                                       $("#signup-error").show();
+                                if(response.is_logined === true){
+                                    location.href = "/user/welcome";
+                                } else {
+                                    $("#signup-password").val("");
+                                    $("#signup-error").html(response.message);
+                                    $("#signup-error").show();
                                 }
                             }
                         },
@@ -206,7 +213,9 @@
                     });
                 }else{
                     $("#signup-error").show();
+
                 }
+
             });
 
         </script>
