@@ -103,6 +103,22 @@ public class GenericDB<T> {
         return 0;
     }
 
+    public static int getCountDummyFunction(TableLike<?> table, Condition condition) {
+        Connection conn = null;
+        try {
+            conn = databaseConnectionPool.getConnection();
+            DSLContext create = DSL.using(conn, SQLDialect.POSTGRES);
+            SelectJoinStep<Record1<Integer>> x = create.selectCount()
+                    .from(table);
+            if (condition != null)
+                return x.where(condition).fetchOne(0, int.class);
+            return x.fetchOne(0, int.class);
+        } catch (Exception w) {
+            w.printStackTrace();
+        }
+        return 0;
+    }
+
     public static List<?> getRows(TableLike<?> table, Class<?> converterClass, Condition condition, Integer limit) {
         return getRows(table, converterClass, condition, limit, null);
     }
